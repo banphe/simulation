@@ -23,7 +23,7 @@ export class ParameterSet {
         this.#add('availability', 'Dostępność masażysty', 10, 0, 14);
         this.#add('monthlyCosts', 'Koszty miesięczne', 6000, 500, 50000, 500);
         this.#add('hourlyRevenue', 'Przychód za godzinę', 140, 50, 300, 10);
-        this.#add('therapistRate', 'Stawka masażysty', 75, 30, 150, 5);
+        this.#add('therapistRate', 'Stawka masażysty', 75, 0, 150, 5);
     }
     
     #add(id, label, value, min, max, step = 1) {
