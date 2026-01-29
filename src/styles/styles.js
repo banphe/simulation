@@ -11,6 +11,8 @@ export const styles = {
     
     // Główny kontener
     container: [
+        'flex',
+        'flex-col',
         'h-[calc(100dvh-4rem)]',
         'min-h-0',
         'overflow-y-auto',
