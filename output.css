@@ -205,14 +205,8 @@
   .static {
     position: static;
   }
-  .sticky {
-    position: sticky;
-  }
   .top-full {
     top: 100%;
-  }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -297,9 +291,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .min-h-0 {
     min-height: calc(var(--spacing) * 0);
@@ -582,6 +573,9 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+}
+html {
+  height: 100%;
 }
 @property --tw-border-style {
   syntax: "*";

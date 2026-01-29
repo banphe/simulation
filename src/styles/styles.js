@@ -3,7 +3,7 @@ export const styles = {
     body: [
         'flex',
         'flex-col',
-        'min-h-dvh',
+        'h-dvh',
         'overflow-hidden',
         'antialiased',
         'font-inter'
@@ -32,8 +32,6 @@ export const styles = {
         'flex',
         'items-center',
         'justify-evenly',
-        'sticky',
-        'bottom-0',
         'relative',
         'z-10'
     ].join(' '),
