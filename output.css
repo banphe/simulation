@@ -298,6 +298,9 @@
   .min-h-0 {
     min-height: calc(var(--spacing) * 0);
   }
+  .min-h-dvh {
+    min-height: 100dvh;
+  }
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
