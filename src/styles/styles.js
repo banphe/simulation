@@ -27,6 +27,12 @@ export const styles = {
         'flex-col',
         'h-full'
     ].join(' '),
+
+    calendarWrapper: [
+        'flex',
+        'flex-col',
+        'h-full'
+    ].join(' '),
     
     // Menu nawigacji
     menu: [
@@ -79,6 +85,10 @@ export const styles = {
     ].join(' '),
 
     chartContainer: [
+        'flex-1'
+    ].join(' '),
+
+    calendarContainer: [
         'flex-1'
     ].join(' '),
     
