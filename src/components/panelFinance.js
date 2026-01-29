@@ -4,7 +4,7 @@ import { ButtonGroup } from './buttonGroup.js';
 
 export class PanelFinance {
     constructor() {
-        this.element = el('div', styles.paramPanel);
+        this.element = el('div', styles.paramPanelCompact);
         this.onPeriodChange = null;
         
         const header = el('div', styles.panelFinanceHeader);

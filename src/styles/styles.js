@@ -12,6 +12,7 @@ export const styles = {
     container: [
         'flex-1',
         'overflow-y-auto',
+        'overflow-x-hidden',
         'p-4'
     ].join(' '),
     
@@ -173,6 +174,15 @@ export const styles = {
         'max-w-md',
         'mx-auto',
         'mb-4'
+    ].join(' '),
+
+    paramPanelCompact: [
+        'bg-white',
+        'rounded-lg',
+        'shadow',
+        'p-4',
+        'max-w-md',
+        'mx-auto'
     ].join(' '),
     
     paramHeader: [
