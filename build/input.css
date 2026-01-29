@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-html {
-  height: 100%;
-}
-
 @source "../src/**";
 @source "../**/*.js";
 @source "../index.html";
