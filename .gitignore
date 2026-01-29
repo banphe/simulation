@@ -1,0 +1,6 @@
+node_modules/
+build/tailwindcss.exe
+output.css
+.DS_Store
+*.log
+.vscode/settings.json
