@@ -15,11 +15,6 @@ export class CalendarView {
      const options = getCalendarOptions();
      const calendar = new FullCalendar.Calendar(calendarEl, options);
      calendar.render();
-     
-     for(let i = 0; i < 20; i++) {
-         const testDiv = el('div', 'p-4 bg-blue-100 m-2', `Test content ${i}`);
-         this.element.appendChild(testDiv);
-     }
     }
     
     show() {this.element.style.display = 'block';}
