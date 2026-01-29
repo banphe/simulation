@@ -3,7 +3,7 @@ export const styles = {
     body: [
         'flex',
         'flex-col',
-        'h-screen',
+        'h-dvh',
         'antialiased',
         'font-inter'
     ].join(' '),
