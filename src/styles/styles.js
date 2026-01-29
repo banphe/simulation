@@ -25,7 +25,7 @@ export const styles = {
     reportWrapper: [
         'flex',
         'flex-col',
-        'h-full'
+        'h-[90dvh]'
     ].join(' '),
     
     // Menu nawigacji
