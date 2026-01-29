@@ -1,5 +1,5 @@
 export const getChartOptions = (data) => ({
-    chart: { type: 'bar', height: 'calc(100% - 38px)', toolbar: { show: false } },
+    chart: { type: 'bar', height: '90%', toolbar: { show: false } },
     plotOptions: { bar: { borderRadius: 4, horizontal: true } },
     colors: ['#1e40af'],
     grid: { padding: { top: -20 } },
