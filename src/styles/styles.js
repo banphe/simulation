@@ -17,7 +17,6 @@ export const styles = {
     
     // Wrapper dla view
     viewWrapper: [
-        'h-full',
         'flex',
         'flex-col'
     ].join(' '),
