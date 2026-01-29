@@ -8,7 +8,7 @@ export class PanelFinance {
         this.onPeriodChange = null;
         
         const header = el('div', styles.panelFinanceHeader);
-        const title = el('h2', styles.paramHeader, 'Finanse');
+        const title = el('h2', styles.paramHeader, 'Wyniki');
         
         this.buttonGroup = new ButtonGroup((id) => this.onPeriodChange?.(id));
         

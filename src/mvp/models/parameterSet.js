@@ -18,7 +18,7 @@ export class ParameterSet {
     #init() {
         this.#add('hoursOpen', 'Godziny otwarcia', 10, 1, 14);
         this.#add('cabins', 'Gabinety', 2, 1, 10);
-        this.#add('therapists', 'Masażyści', 4, 1, 10);
+        this.#add('therapists', 'Masażyści', 4, 0, 10);
         this.#add('massageHours', 'Masażogodziny', 5, 0, 10, 0.5);
         this.#add('availability', 'Dostępność masażysty', 10, 0, 14);
         this.#add('monthlyCosts', 'Koszty miesięczne', 6000, 500, 50000, 500);

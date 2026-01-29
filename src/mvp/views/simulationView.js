@@ -48,19 +48,6 @@ export class SimulationView {
         
         this.element.appendChild(this.paramPanel.element);
         
-        const resultPanel = el('div', styles.paramPanel);
-        const resultHeader = el('h2', styles.paramHeader, 'Wyniki');
-        const resultDivider = el('div', styles.paramDivider);
-        
-        resultPanel.appendChild(resultHeader);
-        resultPanel.appendChild(resultDivider);
-        
-        this.#createCapacityResults();
-        resultPanel.appendChild(this.capacityGrid.element);
-        resultPanel.appendChild(this.usageGrid.element);
-        
-        this.element.appendChild(resultPanel);
-        
         this.financePanel = new PanelFinance();
         this.financePanel.onPeriodChange = (period) => this.onFinancePeriodChange?.(period);
         this.#createFinanceResults();
@@ -69,28 +56,16 @@ export class SimulationView {
         this.element.appendChild(this.financePanel.element);
     }
     
-    #createCapacityResults() {
-        this.capacityGrid = new ResultGrid();
-        this.results.cabinHours = new ResultCard('Gabinetogodziny', 'blue');
-        this.results.workHours = new ResultCard('Roboczogodziny', 'green');
-        this.results.booksyHours = new ResultCard('Dostępność Booksy', 'amber');
-        this.capacityGrid.add(this.results.cabinHours);
-        this.capacityGrid.add(this.results.workHours);
-        this.capacityGrid.add(this.results.booksyHours);
-        
-        this.usageGrid = new ResultGrid();
-        this.results.salonUsage = new ResultCard('Wykorzystanie salonu', 'purple');
-        this.results.therapistUsage = new ResultCard('Wykorzystanie masażysty', 'rose');
-        this.usageGrid.add(this.results.salonUsage);
-        this.usageGrid.add(this.results.therapistUsage);
-    }
-    
     #createFinanceResults() {
         this.financeGrid = new ResultGrid();
+        this.results.salonUsage = new ResultCard('Wykorzystanie salonu', 'purple');
+        this.results.therapistUsage = new ResultCard('Wykorzystanie masażysty', 'rose');
         this.results.margin = new ResultCard('Marża', 'emerald');
         this.results.income = new ResultCard('Dochód salonu', 'indigo');
         this.results.therapistIncome = new ResultCard('Dochód masażysty', 'orange');
         this.results.breakEven = new ResultCard('Break-even', 'blue');
+        this.financeGrid.add(this.results.salonUsage);
+        this.financeGrid.add(this.results.therapistUsage);
         this.financeGrid.add(this.results.margin);
         this.financeGrid.add(this.results.income);
         this.financeGrid.add(this.results.therapistIncome);
@@ -105,9 +80,6 @@ export class SimulationView {
     }
     
     updateResults(capacity, finance, mult) {
-        this.results.cabinHours.setValue(capacity.cabinHours.toFixed(0));
-        this.results.workHours.setValue(capacity.workHours.toFixed(0));
-        this.results.booksyHours.setValue(capacity.booksyHours.toFixed(0));
         this.results.salonUsage.setValue(capacity.salonUsage.toFixed(1) + '%');
         this.results.therapistUsage.setValue(capacity.therapistUsage.toFixed(1) + '%');
         this.results.margin.setValue((finance.margin * mult).toFixed(0) + ' zł');
