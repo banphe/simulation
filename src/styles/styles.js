@@ -4,7 +4,6 @@ export const styles = {
         'flex',
         'flex-col',
         'h-dvh',
-        'overflow-hidden',
         'antialiased',
         'font-inter'
     ].join(' '),
