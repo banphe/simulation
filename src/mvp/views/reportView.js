@@ -6,7 +6,7 @@ import { ButtonGroup } from '../../components/buttonGroup.js';
 
 export class ReportView {
     constructor(container) {
-        this.wrapper = el('div', styles.viewWrapper);
+        this.wrapper = el('div', styles.reportWrapper);
         container.appendChild(this.wrapper);
     }
 

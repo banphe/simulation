@@ -21,6 +21,12 @@ export const styles = {
         'flex',
         'flex-col'
     ].join(' '),
+
+    reportWrapper: [
+        'flex',
+        'flex-col',
+        'h-full'
+    ].join(' '),
     
     // Menu nawigacji
     menu: [
@@ -157,6 +163,7 @@ export const styles = {
         'hover:bg-gray-100',
         'cursor-pointer'
     ].join(' '),
+
 
     // Parameter control
     paramRow: [
