@@ -25,7 +25,7 @@ export const styles = {
     reportWrapper: [
         'flex',
         'flex-col',
-        'h-[90dvh]'
+        'h-full'
     ].join(' '),
     
     // Menu nawigacji
@@ -76,6 +76,10 @@ export const styles = {
         'gap-4',
         'items-center',
         'mb-2'
+    ].join(' '),
+
+    chartContainer: [
+        'flex-1'
     ].join(' '),
     
     // Button group container

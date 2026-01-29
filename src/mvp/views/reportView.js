@@ -21,7 +21,7 @@ export class ReportView {
         controlsRow.appendChild(this.buttonGroup.element);
         controlsRow.appendChild(this.metricDropdown.element);
         
-        this.chartElement = el('div');
+        this.chartElement = el('div', styles.chartContainer);
         this.wrapper.appendChild(controlsRow);
         this.wrapper.appendChild(this.chartElement);
     }
