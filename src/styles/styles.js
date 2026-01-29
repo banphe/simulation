@@ -32,6 +32,8 @@ export const styles = {
         'flex',
         'items-center',
         'justify-evenly',
+        'sticky',
+        'bottom-0',
         'relative',
         'z-10'
     ].join(' '),
