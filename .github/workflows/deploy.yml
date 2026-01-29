@@ -16,5 +16,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd /var/www/simulation.jdhub.shop
+            git fetch
+            git reset --hard origin/master
             git pull
             ./build/tailwindcss -i build/input.css -o output.css --minify
