@@ -11,7 +11,6 @@ export const styles = {
     // Główny kontener
     container: [
         'flex-1',
-        'min-h-0',
         'overflow-y-auto',
         'overflow-x-hidden',
         'p-4'
@@ -29,12 +28,6 @@ export const styles = {
         'h-full'
     ].join(' '),
 
-    calendarWrapper: [
-        'flex',
-        'flex-col',
-        'flex-1',
-        'min-h-0'
-    ].join(' '),
     
     // Menu nawigacji
     menu: [
@@ -90,10 +83,6 @@ export const styles = {
         'flex-1'
     ].join(' '),
 
-    calendarContainer: [
-        'flex-1',
-        'min-h-0'
-    ].join(' '),
     
     // Button group container
     buttonGroup: [

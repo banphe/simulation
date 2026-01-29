@@ -4,12 +4,12 @@ import { getCalendarOptions } from '../config/calendarConfig.js';
 
 export class CalendarView {
     constructor(container) {
-        this.element = el('div', styles.calendarWrapper);
+        this.element = el('div', styles.viewWrapper);
         container.appendChild(this.element);
     }
 
     render(){
-     const calendarEl = el('div', styles.calendarContainer);
+     const calendarEl = el('div');
      this.element.appendChild(calendarEl);
      
      const options = getCalendarOptions();
