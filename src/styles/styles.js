@@ -11,7 +11,7 @@ export const styles = {
     
     // Główny kontener
     container: [
-        'flex-1',
+        'h-[calc(100dvh-4rem)]',
         'min-h-0',
         'overflow-y-auto',
         'overflow-x-hidden',
@@ -21,13 +21,16 @@ export const styles = {
     // Wrapper dla view
     viewWrapper: [
         'flex',
-        'flex-col'
+        'flex-col',
+        'flex-1',
+        'min-h-0'
     ].join(' '),
 
     reportWrapper: [
         'flex',
         'flex-col',
-        'h-full'
+        'flex-1',
+        'min-h-0'
     ].join(' '),
 
     
