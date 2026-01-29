@@ -330,7 +330,7 @@ export const styles = {
     resultGrid: [
         'grid',
         'grid-cols-2',
-        'md:grid-cols-3',
+        'md:grid-cols-2',
         'gap-2',
         'mt-3'
     ].join(' '),

@@ -66,10 +66,10 @@ export class SimulationView {
         this.results.breakEven = new ResultCard('Break-even', 'blue');
         this.financeGrid.add(this.results.salonUsage);
         this.financeGrid.add(this.results.therapistUsage);
-        this.financeGrid.add(this.results.margin);
         this.financeGrid.add(this.results.income);
         this.financeGrid.add(this.results.therapistIncome);
         this.financeGrid.add(this.results.breakEven);
+        this.financeGrid.add(this.results.margin);
     }
     
     updateParam(id, value, canDec, canInc) {
