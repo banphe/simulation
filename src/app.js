@@ -7,7 +7,6 @@ import { el } from './core/dom.js';
 document.body.className = styles.body;
 
 const container = el('div', styles.container);
-container.style.webkitOverflowScrolling = 'touch';
 const menu = el('div', styles.menu);
 
 const debugPanel = el('div');
