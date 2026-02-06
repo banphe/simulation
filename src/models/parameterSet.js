@@ -16,10 +16,10 @@ export class ParameterSet {
         v[id] = newValue;
         
         const capacity = v.hoursOpen * v.cabins;
-        const workHours = v.therapists * v.massageHours;
+        const workHours = v.employees * v.serviceHours;
         
         if (workHours > capacity) return false;
-        if (v.massageHours > v.hoursOpen) return false;
+        if (v.serviceHours > v.hoursOpen) return false;
         
         return true;
     }
@@ -49,11 +49,11 @@ export class ParameterSet {
     #init() {
         this.#add('hoursOpen', 'Godziny otwarcia', 8, 1, 14, 1, 'Salon');
         this.#add('cabins', 'Stanowiska Pracy', 1, 1, 10, 1, 'Salon');
-        this.#add('therapists', 'Ilość Personelu', 1, 0, 10, 1, 'Personel');
-        this.#add('massageHours', 'Godziny', 2, 0, 10, 0.5, 'Personel');
+        this.#add('employees', 'Ilość Personelu', 1, 0, 10, 1, 'Personel');
+        this.#add('serviceHours', 'Godziny', 2, 0, 10, 0.5, 'Personel');
         this.#add('monthlyCosts', 'Koszty miesięczne', 1800, 100, 50000, 100, 'Salon');
         this.#add('hourlyRevenue', 'Przychód za godzinę', 140, 50, 300, 10, 'Usługi');
-        this.#add('therapistRate', 'Stawka masażysty', 75, 0, 150, 5, 'Personel');
+        this.#add('employeeRate', 'Stawka pracownika', 75, 0, 150, 5, 'Personel');
     }
 
     #add(id, label, value, min, max, step, page) {

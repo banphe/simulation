@@ -1,5 +1,6 @@
 node_modules/
 output.css
-build/*.exe
+build
 .DS_Store
 *.log
+scripts
